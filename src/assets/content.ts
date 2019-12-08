@@ -15,7 +15,12 @@ export const topNavigationStyleOneContent = [
                 {id: 2, faIcon: '', title: 'French'},
                 {id: 3, faIcon: '', title: 'Spanish'},
                 {id: 4, faIcon: '', title: 'Nepalese'},
-            ]
+            ],
+            other: [
+                {id: 0, title: 'Lorem', url: '#'},
+                {id: 1, title: 'Donec', url: '#'},
+                {id: 2, title: 'Morbi', url: '#'},
+            ],
         },
         three: [
             {id: 0, title: 'Lorem', url: '#'},

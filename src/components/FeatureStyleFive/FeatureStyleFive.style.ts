@@ -4,6 +4,7 @@ import {DefaultStyle} from "../../assets/style";
 export const FeatureStyleFiveBase = styled.div`
 
   padding: ${DefaultStyle.sectionPaddingTopBottom} 0px;
+  background: #fff !important;
   
   .row-one{
   

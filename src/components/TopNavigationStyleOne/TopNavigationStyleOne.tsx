@@ -10,7 +10,7 @@ interface IProps {
 export const TopNavigationStyleOne: FC<IProps> = (props) => {
     return <TopNavigationStyleOneBase>
 
-        <Container fluid>
+        <Container>
             <Row>
                 <Col>
                     <Nav>
@@ -42,26 +42,20 @@ export const TopNavigationStyleOne: FC<IProps> = (props) => {
                                 )}
                             </NavDropdown>
                         )}
-                    </Nav>
-                </Col>
 
-                {/* Menu 3*/}
-                <Col>
-                    <Nav>
+                        {/* Other */}
                         {topNavigationStyleOneContent.map((item) =>
-                            <>
-                                {item.three.map((i) =>
-                                    <Nav.Link key={i.id} href={i.url}>
-                                        {i.title}
-                                    </Nav.Link>
+                            <NavDropdown title="Lorem Ipsum" id="nav-dropdown">
+                                {item.two.other.map((i) =>
+                                    <NavDropdown.Item key={i.id}>{i.title}</NavDropdown.Item>
                                 )}
-                            </>
+                            </NavDropdown>
                         )}
                     </Nav>
                 </Col>
 
                 {/* Menu 4 */}
-                <Col md={3} className="float-right">
+                <Col md={3} className="ml-auto col-four">
                     <Nav>
                         {topNavigationStyleOneContent.map((item) => <>
                                 {item.four.map((i) =>

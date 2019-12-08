@@ -3,8 +3,10 @@ import {DefaultStyle} from "../../assets/style";
 
 export const SpecialOfferStyleOneBase = styled.div`
 
-  background: ${DefaultStyle.primary};
-  padding: 10px;
+  background: ${DefaultStyle.secondary};
+  height: 40px;
+  padding-top: 8px;
+  
   a{
     color:${DefaultStyle.quaternary};
   }

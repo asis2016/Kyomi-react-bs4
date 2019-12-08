@@ -21,7 +21,7 @@ export const DefaultStyle = {
 
     primary: '#1C223B',
     /*primaryLight: '#424f77',*/
-    /* primaryDark: '#45578d',*/
+     primaryDark: '#161b2e',
 
     secondary: '#287ABA',
     tertiary: '#8AB8D6',
