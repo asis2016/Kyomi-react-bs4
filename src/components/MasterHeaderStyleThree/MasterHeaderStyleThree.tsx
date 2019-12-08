@@ -1,10 +1,11 @@
 import React, {FC} from 'react'
 import {MasterHeaderStyleThreeBase} from "./MasterHeaderStyleThree.style";
-import {videoTagString, VideoTag} from 'react-video-tag'
+import {VideoTag} from 'react-video-tag'
 
 
 interface IProps {
-    title?: string;
+    title: string;
+    subTitle: string;
 }
 
 export const MasterHeaderStyleThree: FC<IProps> = (props) => {
@@ -18,9 +19,9 @@ export const MasterHeaderStyleThree: FC<IProps> = (props) => {
             <div className="d-flex text-center h-100">
                 <div className="my-auto w-100 text-white">
                     <h1 className="display-1">
-                        नमस्ते नेपाल
+                        {props.title}
                     </h1>
-                    <h2>Welcome to Nepal. The land of Himalayas.</h2>
+                    <h2>{props.subTitle}</h2>
                     <a className="btn btn-primary-kyomi btn-lg mt-3" href="#">
                         <i className="fas fa-map-marked-alt"></i> &nbsp; Start Exploring
                     </a>

@@ -5,10 +5,9 @@ export const FeatureStyleFiveBase = styled.div`
 
   padding: ${DefaultStyle.sectionPaddingTopBottom} 0px;
   background: #fff !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   
-  .row-one{
   
-  }
   
   .row-two{
     padding: 50px 0px;
@@ -25,8 +24,26 @@ export const FeatureStyleFiveBase = styled.div`
     min-height: 350px;
   }
   
+  .row-two .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        opacity: 0.4;
+        z-index: 1;
+   }
+  
   .row-two .content{
     padding: 70px 20px 20px 20px;
+    position: relative;
+    z-index: 2;
   }
+  
+  .row-two h4{
+    color: ${DefaultStyle.quaternary};
+  }
+  
   
 `;

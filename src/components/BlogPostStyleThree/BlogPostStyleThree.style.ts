@@ -4,7 +4,7 @@ import {DefaultStyle} from "../../assets/style";
 export const BlogPostStyleThreeBase = styled.div`
 
   padding: ${DefaultStyle.sectionPaddingTopBottom} 0px;
-  
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   
   .card{
     border: none;

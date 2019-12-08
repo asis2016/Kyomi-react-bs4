@@ -1,16 +1,5 @@
 export const DefaultStyle = {
 
-    /*
-    *   font-family: 'Cedarville Cursive', cursive;
-        font-family: 'PT Sans', sans-serif;
-        font-family: 'Josefin Sans', sans-serif;
-    * */
-
-    /*
-    *  #287ABA
-    *
-    * */
-
     primaryFont: '\'Josefin Sans\', sans-serif',
     secondaryFont: '\'PT Sans\', sans-serif',
     subTitleFont: '\'Cedarville Cursive\', cursive',

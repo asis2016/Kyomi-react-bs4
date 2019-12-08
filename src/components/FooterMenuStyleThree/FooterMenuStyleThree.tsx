@@ -82,8 +82,6 @@ export const FooterMenuStyleThree: FC<IProps> = (props) => {
     return <FooterMenuStyleThreeBase
         style={{backgroundImage: 'url(' + require('../../assets/images/mountain.jpg') + ')'}}>
         <Container>
-
-
             <Row className="row-two">
                 <Col xs={6} className="col-one">
                     <h5>Kyomi Everest Expedition</h5>

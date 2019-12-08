@@ -1,6 +1,5 @@
 import React from 'react';
 import {AppBase} from './App.style';
-import {Col, Container, Nav, NavDropdown, Row} from "react-bootstrap";
 import {TopNavigationStyleOne} from "./components/TopNavigationStyleOne/TopNavigationStyleOne";
 import {NavigationStyleThree} from "./components/NavigationStyleThree/NavigationStyleThree";
 import {SpecialOfferStyleOne} from "./components/SpecialOfferStyleOne/SpecialOfferStyleOne";
@@ -9,10 +8,9 @@ import {FooterMenuStyleThree} from "./components/FooterMenuStyleThree/FooterMenu
 import {BlogPostStyleThree} from "./components/BlogPostStyleThree/BlogPostStyleThree";
 import {PortfolioStyleTwo} from "./components/PortfolioStyleTwo/PortfolioStyleTwo";
 import {MasterHeaderStyleThree} from "./components/MasterHeaderStyleThree/MasterHeaderStyleThree";
-import {GalleryStyleOne} from "./components/GalleryStyleOne/GalleryStyleOne";
+import {GalleryStyleTwo} from "./components/GalleryStyleOne/GalleryStyleTwo";
 
 const App: React.FC = () => {
-
     return <AppBase>
 
         {/* Top navigation style one */}
@@ -22,12 +20,15 @@ const App: React.FC = () => {
         <NavigationStyleThree navbarBrand={"Kyomi Mountaineering"}/>
 
         {/* Master Head style three */}
-        <MasterHeaderStyleThree/>
+        <MasterHeaderStyleThree title={"नमस्ते नेपाल"}
+                                subTitle={"Welcome to Nepal. The land of Himalayas."}
+        />
 
         {/* Special offer style one */}
         <SpecialOfferStyleOne title={"Donec et mi dapibus nisl venenatis commodo vitae nulla. Code: 121212"}
                               href={"#"}
-                              faIcon={"gifts"}/>
+                              faIcon={"gifts"}
+        />
 
         {/* Feature style five */}
         <FeatureStyleFive title={"Fringilla Everest 2019"}
@@ -35,8 +36,8 @@ const App: React.FC = () => {
                             Suspendisse nec nulla in leo lacinia sodales.
                             Morbi auctor nulla euismod turpis faucibus, eget dignissim odio pharetra.
                           `}
-                          subTitle={"vitae maximus nulla"}/>
-
+                          subTitle={"vitae maximus nulla"}
+        />
 
         {/* Portfolio style two */}
         <PortfolioStyleTwo title={"Suspendisse vel sollicitudin"}
@@ -54,17 +55,15 @@ const App: React.FC = () => {
                             subTitle={"Quisque porttitor metus non"}/>
 
         {/* Gallery Style TWo*/}
-        <GalleryStyleOne title={"Quisque nec diam ac erat"}
+        <GalleryStyleTwo title={"Quisque nec diam ac erat"}
                          caption={`Quisque nec diam ac erat varius luctus. Vivamus felis eros, accumsan 
         feugiat congue ut at leo. Curabitur accumsan placerat dapibus. Proin nec enim nec dui pretium
         at tellus non, vehicula egestas justo. `}
                          subTitle={"Sed cursus metus eget orci iaculis"}
         />
 
-
         {/* Footer menu style 3*/}
         <FooterMenuStyleThree title={"Donec et mi dapibus nisl"} subTitle={"Donec et mi dapibus nisl"}/>
-
 
     </AppBase>
 };

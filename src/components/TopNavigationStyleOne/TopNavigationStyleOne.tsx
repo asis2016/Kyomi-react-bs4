@@ -9,7 +9,6 @@ interface IProps {
 
 export const TopNavigationStyleOne: FC<IProps> = (props) => {
     return <TopNavigationStyleOneBase>
-
         <Container>
             <Row>
                 <Col>
@@ -45,6 +44,7 @@ export const TopNavigationStyleOne: FC<IProps> = (props) => {
 
                         {/* Other */}
                         {topNavigationStyleOneContent.map((item) =>
+
                             <NavDropdown title="Lorem Ipsum" id="nav-dropdown">
                                 {item.two.other.map((i) =>
                                     <NavDropdown.Item key={i.id}>{i.title}</NavDropdown.Item>
@@ -70,4 +70,4 @@ export const TopNavigationStyleOne: FC<IProps> = (props) => {
             </Row>
         </Container>
     </TopNavigationStyleOneBase>
-}
+};

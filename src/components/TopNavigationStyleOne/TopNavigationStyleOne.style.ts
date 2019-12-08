@@ -7,7 +7,6 @@ export const TopNavigationStyleOneBase = styled.div`
   background-color: ${DefaultStyle.primaryDark};
   height: 40px;
   
-  
   .nav-link{
     color: ${DefaultStyle.quaternary};
   }

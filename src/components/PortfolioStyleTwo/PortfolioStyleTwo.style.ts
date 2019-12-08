@@ -5,6 +5,7 @@ export const PortfolioStyleTwoBase = styled.div`
 
   padding: ${DefaultStyle.sectionPaddingTopBottom} 0px;
   background: ${DefaultStyle.quaternary} !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   .row-two{
     margin-top: 50px;

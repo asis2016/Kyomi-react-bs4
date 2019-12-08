@@ -28,6 +28,5 @@ export const NavigationStyleThree: FC<IProps> = (props) => {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-
     </NavigationStyleThreeBase>
-}
+};
