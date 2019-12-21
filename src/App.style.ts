@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {DefaultStyle} from "./assets/style";
 
 export const AppBase = styled.div`
-
+overflow: hidden;
 body {
     background-color: ${DefaultStyle.bgColor};
     font-family: ${DefaultStyle.secondaryFont};
