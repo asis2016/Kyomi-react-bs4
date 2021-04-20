@@ -8,7 +8,8 @@ import {FooterMenuStyleThree} from "./components/FooterMenuStyleThree/FooterMenu
 import {BlogPostStyleThree} from "./components/BlogPostStyleThree/BlogPostStyleThree";
 import {PortfolioStyleTwo} from "./components/PortfolioStyleTwo/PortfolioStyleTwo";
 import {MasterHeaderStyleThree} from "./components/MasterHeaderStyleThree/MasterHeaderStyleThree";
-import {GalleryStyleTwo} from "./components/GalleryStyleOne/GalleryStyleTwo";
+import GalleryStyleTwo from "./components/organisms/GalleryStyleTwo";
+
 
 const App: React.FC = () => {
     return <AppBase>
