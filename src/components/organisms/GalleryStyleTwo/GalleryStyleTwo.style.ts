@@ -15,25 +15,4 @@ export const GalleryStyleTwoBase = styled.div`
   .sub-title {
     color: ${DefaultStyle.secondary};
   }
-
-  .gallery {
-    position: relative;
-    display: inline;
-    height: 150px;
-    width: 150px;
-  }
-
-  .gallery-img {
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border-radius: 2px;
-    margin-bottom: 15px;
-  }
-
-  .badge {
-    position: absolute;
-    top: 60px;
-    left: 15px;
-  }
 `;

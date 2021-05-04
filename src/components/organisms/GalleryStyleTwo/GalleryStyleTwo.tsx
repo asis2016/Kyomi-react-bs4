@@ -37,7 +37,7 @@ const GalleryStyleTwo: FC<IProps> = (props) => {
                 </Row>
 
                 <Row>
-                    <Col md={12} className="text-center">
+                    <Col md={{span: 10, offset: 1}} className="text-center">
                         {GalleryStyleOneContent.map((item) => (
                             <HomeGallery tag={item.tag} image={item.img} title={item.title}/>
                         ))}
