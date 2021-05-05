@@ -65,36 +65,7 @@ export const FeatureStyleFiveContent = [
     },
 ];
 
-export const BlogPostStyleThreeContent = [
-    {
-        id: 1,
-        title: 'Etiam porta sem malesuada',
-        author: 'Jane Austin',
-        img: 'b-4.jpg',
-        shortContent: 'Dducimus qui blanditiis praesentium voluptatum blanditiis ad veras tu du.'
-    },
-    {
-        id: 2,
-        title: 'Morbi euismod nisl',
-        author: 'Jean W. Stokes',
-        img: 'b-2.jpg',
-        shortContent: 'Pellentesque nec felis sit amet turpis viverra ullamcorper vel ut sapien.'
-    },
-    {
-        id: 3,
-        title: 'Pellentesque aliquet eros',
-        author: 'Jean W. Stokes',
-        img: 'b-3.jpg',
-        shortContent: 'Vestibulum commodo lectus at nulla rhoncus, in commodo velit dapibus.\n'
-    },
-    {
-        id: 4,
-        title: 'Praesent rutrum purus',
-        author: 'Marz Watson',
-        img: 'b-1.jpg',
-        shortContent: 'Integer pellentesque sapien sed libero placerat, accumsan interdum mi tempor.\n'
-    },
-];
+
 
 export const GalleryStyleOneContent = [
     {

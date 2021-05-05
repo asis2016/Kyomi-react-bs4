@@ -1,71 +1,32 @@
-import React, {FC} from "react"
-import {Card, Carousel, Col, Container, Image, Row} from "react-bootstrap";
-import {PortfolioStyleOneContent} from "../../assets/content";
-import {PortfolioStyleTwoBase} from "./PortfolioStyleTwo.style";
-import {VideoTag} from "react-video-tag";
+import React from 'react'
+import {PortfolioStyle} from "./Portfolio.style";
+import {Card, Carousel, Col, Container, Row} from "react-bootstrap";
+import {SectionBlockquote, SectionHeader} from "../../../../components/molecules";
+import {PortfolioData} from "../../data";
 
-interface IProps {
-    title: string;
-    caption: string;
-    subTitle: string;
-};
-
-
-export const PortfolioStyleTwoContent = [
-    {
-        id: 1,
-        img: 'port-1.jpg',
-        name: 'Jane Doe',
-        content: 'Weit über den nebligen Bergen kalt In tiefe Kerker und alte Höhlen. Wir müssen vor Tagesanbruch weg, um unser längst vergessenes Gold zu finden.',
-    },
-    {
-        id: 2,
-        img: 'port-3.jpg',
-        name: 'Natalia Sammy',
-        content: 'Weit über den nebligen Bergen kalt In tiefe Kerker und alte Höhlen. Wir müssen vor Tagesanbruch weg, um unser längst vergessenes Gold zu finden.',
-    },
-    {
-        id: 3,
-        img: 'port-4.jpg',
-        name: 'Nelly K. Austin',
-        content: 'Weit über den nebligen Bergen kalt In tiefe Kerker und alte Höhlen. Wir müssen vor Tagesanbruch weg, um unser längst vergessenes Gold zu finden.',
-    },
-    {
-        id: 4,
-        img: 'port-2.jpg',
-        name: 'John Rose',
-        content: 'Weit über den nebligen Bergen kalt In tiefe Kerker und alte Höhlen. Wir müssen vor Tagesanbruch weg, um unser längst vergessenes Gold zu finden.',
-    },
-];
-
-export const PortfolioStyleTwo: FC<IProps> = (props) => {
-    return <PortfolioStyleTwoBase>
+export const Portfolio = () => {
+    return <PortfolioStyle>
         <Container fluid>
-            <Row className="pt-5">
-                <Col md={{span: 6, offset: 3}} className="text-center">
-                    <p className="sub-title">{props.subTitle}</p>
-                    <h1>{props.title}</h1>
-                    <p className="pt-3">{props.caption}</p>
-                </Col>
-            </Row>
+            <SectionHeader description={`Phasellus eget pellentesque ex, non dapibus lacus. Nunc non augue malesuada, 
+                                               Suspendisse vel sollicitudin velit, sit amet mollis augue. Phasellus eget pellentesque ex.`}
+                           subTitle={"Sed tempus magna eu metus semper."}
+                           title={"Our Portfolio"}/>
 
             <Row className="row-two">
-                <Col style={{backgroundImage: "url(" + require("../../assets/images/p-1.jpg") + ")"}}
-                     className="col-one">
-
+                <Col
+                    style={{backgroundImage: "url(https://raw.githubusercontent.com/asis2016/kyomi-react-bootstrap4/master/src/assets/images/p-1.jpg)"}}
+                    className="col-one">
                 </Col>
 
                 <Col className="d-flex justify-content-center align-items-center">
                     <Carousel>
-                        {PortfolioStyleTwoContent.map((item) =>
+                        {PortfolioData.map((item) =>
                             <Carousel.Item>
                                 <Card>
                                     <Card.Body>
-                                        <img src={require("../../assets/images/" + item.img)} alt=""/>
+                                        <img src={item.img} alt={item.name}/>
                                         <h4 className="pt-4">{item.name}</h4>
-                                        <p>
-                                            {item.content}
-                                        </p>
+                                        <p>{item.content}</p>
                                         <p>
                                             <i className="fa fa-star"></i>
                                             <i className="fa fa-star"></i>
@@ -81,14 +42,9 @@ export const PortfolioStyleTwo: FC<IProps> = (props) => {
                 </Col>
             </Row>
 
-            <Row className="row-three">
-                <Col className="d-flex justify-content-center align-items-center">
-                    <h4>"Maecenas tempor tortor in nunc consequat, id fringilla elit convallis."</h4>
-                    <button className="btn btn-primary-kyomi ml-3"><i className="fas fa-mountain"></i> Suspendisse
-                        sodales
-                    </button>
-                </Col>
-            </Row>
+            <SectionBlockquote href={"#"}
+                               hrefTitle={"Suspendisse sodales"}
+                               text={"\"Maecenas tempor tortor in nunc consequat, id fringilla elit convallis.\""}/>
 
             <Row className="row-four">
                 <Col className="col-one">
@@ -123,7 +79,7 @@ export const PortfolioStyleTwo: FC<IProps> = (props) => {
                 </Col>
             </Row>
         </Container>
-    </PortfolioStyleTwoBase>
-
-
+    </PortfolioStyle>
 }
+
+export default Portfolio

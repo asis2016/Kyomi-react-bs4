@@ -5,15 +5,19 @@ import {NavigationStyleThree} from "./components/NavigationStyleThree/Navigation
 import {SpecialOfferStyleOne} from "./components/SpecialOfferStyleOne/SpecialOfferStyleOne";
 import {FeatureStyleFive} from "./components/FeatureStyleFive/FeatureStyleFive";
 import {FooterMenuStyleThree} from "./components/FooterMenuStyleThree/FooterMenuStyleThree";
-import {BlogPostStyleThree} from "./components/BlogPostStyleThree/BlogPostStyleThree";
-import {PortfolioStyleTwo} from "./components/PortfolioStyleTwo/PortfolioStyleTwo";
 import {MasterHeaderStyleThree} from "./components/MasterHeaderStyleThree/MasterHeaderStyleThree";
 import GalleryStyleTwo from "./components/organisms/GalleryStyleTwo";
+import Home from "./views/Home";
 
 
 const App: React.FC = () => {
     return <AppBase>
 
+        {/* todo refactor */}
+        <Home/>
+
+
+        {/* todo refactor -> move everything below into <Home /> */}
         {/* Top navigation style one */}
         <TopNavigationStyleOne/>
 
@@ -28,8 +32,7 @@ const App: React.FC = () => {
         {/* Special offer style one */}
         <SpecialOfferStyleOne title={"Donec et mi dapibus nisl venenatis commodo vitae nulla. Code: 121212"}
                               href={"#"}
-                              faIcon={"gifts"}
-        />
+                              faIcon={"gifts"}/>
 
         {/* Feature style five */}
         <FeatureStyleFive title={"Fringilla Everest 2019"}
@@ -37,23 +40,11 @@ const App: React.FC = () => {
                             Suspendisse nec nulla in leo lacinia sodales.
                             Morbi auctor nulla euismod turpis faucibus, eget dignissim odio pharetra.
                           `}
-                          subTitle={"vitae maximus nulla"}
-        />
+                          subTitle={"vitae maximus nulla"}/>
 
-        {/* Portfolio style two */}
-        <PortfolioStyleTwo title={"Suspendisse vel sollicitudin"}
-                           subTitle={`Sed tempus magna eu metus semper.
-                                               `}
-                           caption={`Phasellus eget pellentesque ex, non dapibus lacus. Nunc non augue malesuada, 
-                                               Suspendisse vel sollicitudin velit, sit amet mollis augue. Phasellus eget pellentesque ex.
-                                               `}
-        />
-
-        {/* Blog post style three */}
-        <BlogPostStyleThree title={"Vestibulum vitae nisl"}
-                            caption={`In hac habitasse platea dictumst. Pellentesque placerat rhoncus justo sed sollicitudin. 
-                            Donec purus magna, maximus id magna eu, ullamcorper fermentum tortor. `}
-                            subTitle={"Quisque porttitor metus non"}/>
+        {/* todo refactor this. */}
+        {/* <Portfolio/>
+        <Blog/>*/}
 
         {/* Gallery Style TWo*/}
         <GalleryStyleTwo title={"Quisque nec diam ac erat"}
