@@ -1,9 +1,6 @@
 import React from 'react';
 import {AppBase} from './App.style';
 import {TopNavigationStyleOne} from "./components/TopNavigationStyleOne/TopNavigationStyleOne";
-import {NavigationStyleThree} from "./components/NavigationStyleThree/NavigationStyleThree";
-import {SpecialOfferStyleOne} from "./components/SpecialOfferStyleOne/SpecialOfferStyleOne";
-import {FeatureStyleFive} from "./components/FeatureStyleFive/FeatureStyleFive";
 import {FooterMenuStyleThree} from "./components/FooterMenuStyleThree/FooterMenuStyleThree";
 import {MasterHeaderStyleThree} from "./components/MasterHeaderStyleThree/MasterHeaderStyleThree";
 import GalleryStyleTwo from "./components/organisms/GalleryStyleTwo";
@@ -22,7 +19,7 @@ const App: React.FC = () => {
         <TopNavigationStyleOne/>
 
         {/* Navigation style three */}
-        <NavigationStyleThree navbarBrand={"Kyomi Mountaineering"}/>
+        {/*<Navigation/>*/}
 
         {/* Master Head style three */}
         <MasterHeaderStyleThree title={"नमस्ते नेपाल"}
@@ -30,21 +27,15 @@ const App: React.FC = () => {
         />
 
         {/* Special offer style one */}
-        <SpecialOfferStyleOne title={"Donec et mi dapibus nisl venenatis commodo vitae nulla. Code: 121212"}
-                              href={"#"}
-                              faIcon={"gifts"}/>
+        {/* <SectionOffer title={} href={}/>*/}
 
-        {/* Feature style five */}
-        <FeatureStyleFive title={"Fringilla Everest 2019"}
-                          caption={`Nulla luctus libero a risus auctor efficitur.
-                            Suspendisse nec nulla in leo lacinia sodales.
-                            Morbi auctor nulla euismod turpis faucibus, eget dignissim odio pharetra.
-                          `}
-                          subTitle={"vitae maximus nulla"}/>
-
+        {/*<Feature/>*/}
         {/* todo refactor this. */}
-        {/* <Portfolio/>
-        <Blog/>*/}
+        {/*
+        <Feature/>
+        <Portfolio/>
+        <Blog/>
+        */}
 
         {/* Gallery Style TWo*/}
         <GalleryStyleTwo title={"Quisque nec diam ac erat"}

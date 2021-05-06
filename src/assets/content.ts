@@ -42,26 +42,30 @@ export const FeatureStyleFiveContent = [
     {
         id: 1,
         title: 'Vivamus ut sapien mattis',
-        urlText: 'Placerat interdum',
-        img: 'f-2.jpg'
+        href:'#',
+        hrefTitle: 'Placerat interdum',
+        img: 'https://raw.githubusercontent.com/asis2016/kyomi-react-bootstrap4/master/src/assets/images/f-2.jpg'
     },
     {
         id: 2,
         title: 'Nunc luctus lectus ornare',
-        urlText: 'Cursus risus',
-        img: 'f-1.jpg'
+        href:'#',
+        hrefTitle: 'Cursus risus',
+        img: 'https://raw.githubusercontent.com/asis2016/kyomi-react-bootstrap4/master/src/assets/images/f-1.jpg'
     },
     {
         id: 4,
         title: 'Etiam sodales magna facilisi',
-        urlText: 'Interdum et',
-        img: 'f-4.jpg'
+        href:'#',
+        hrefTitle: 'Interdum et',
+        img: 'https://raw.githubusercontent.com/asis2016/kyomi-react-bootstrap4/master/src/assets/images/f-4.jpg'
     },
     {
         id: 3,
         title: 'In laoreet lorem fringilla',
-        urlText: 'Interdum et',
-        img: 'f-3.jpg'
+        href:'#',
+        hrefTitle: 'Interdum et',
+        img: 'https://raw.githubusercontent.com/asis2016/kyomi-react-bootstrap4/master/src/assets/images/f-3.jpg'
     },
 ];
 

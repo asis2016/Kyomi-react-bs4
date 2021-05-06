@@ -1,11 +1,8 @@
 import styled from "styled-components";
-import {DefaultStyle} from "../../assets/style";
+import {DefaultStyle} from "../../../../assets/style";
 
-
-export const NavigationStyleThreeBase = styled.div`
-
-
-  .navbar{
+export const NavigationBase = styled.div`
+.navbar{
     background: ${DefaultStyle.primary};
     color: ${DefaultStyle.quaternary};
     height: 80px;
@@ -24,5 +21,4 @@ export const NavigationStyleThreeBase = styled.div`
   .navbar-brand, .nav-link{
     color: ${DefaultStyle.quaternary} !important;
   }
-
 `;
