@@ -1,19 +1,16 @@
-import React, {FC} from "react";
-import {TopNavigationStyleOneBase} from "./TopNavigationStyleOne.style";
+import React from 'react'
+import {TopNavigationBase} from "./TopNavigation.style";
 import {Col, Container, Nav, NavDropdown, Row} from "react-bootstrap";
-import {topNavigationStyleOneContent} from "../../assets/content";
+import {IconSocial} from "../../../../components/atoms";
+import {NavigationData} from "../../data";
 
-
-interface IProps {
-}
-
-export const TopNavigationStyleOne: FC<IProps> = (props) => {
-    return <TopNavigationStyleOneBase>
+const TopNavigation = () => {
+    return <TopNavigationBase>
         <Container>
             <Row>
                 <Col>
                     <Nav>
-                        {topNavigationStyleOneContent.map((item) =>
+                        {NavigationData.map((item) =>
                             <Nav.Link>
                                 <i className={`fas fa-` + item.one.faIcon}></i> {item.one.title}
                             </Nav.Link>
@@ -25,7 +22,7 @@ export const TopNavigationStyleOne: FC<IProps> = (props) => {
                 <Col>
                     <Nav>
                         {/* Currency */}
-                        {topNavigationStyleOneContent.map((item) =>
+                        {NavigationData.map((item) =>
                             <NavDropdown title="Currency" id="nav-dropdown">
                                 {item.two.currency.map((i) =>
                                     <NavDropdown.Item key={i.id}>{i.title}</NavDropdown.Item>
@@ -34,7 +31,7 @@ export const TopNavigationStyleOne: FC<IProps> = (props) => {
                         )}
 
                         {/* Language */}
-                        {topNavigationStyleOneContent.map((item) =>
+                        {NavigationData.map((item) =>
                             <NavDropdown title="Language" id="nav-dropdown">
                                 {item.two.language.map((i) =>
                                     <NavDropdown.Item key={i.id}>{i.title}</NavDropdown.Item>
@@ -42,26 +39,14 @@ export const TopNavigationStyleOne: FC<IProps> = (props) => {
                             </NavDropdown>
                         )}
 
-                        {/* Other */}
-                        {topNavigationStyleOneContent.map((item) =>
-
-                            <NavDropdown title="Lorem Ipsum" id="nav-dropdown">
-                                {item.two.other.map((i) =>
-                                    <NavDropdown.Item key={i.id}>{i.title}</NavDropdown.Item>
-                                )}
-                            </NavDropdown>
-                        )}
                     </Nav>
                 </Col>
 
                 {/* Menu 4 */}
                 <Col md={3} className="ml-auto col-four">
                     <Nav>
-                        {topNavigationStyleOneContent.map((item) => <>
-                                {item.four.map((i) =>
-                                    <Nav.Link href={i.url} key={i.id}>
-                                        <i className={`fab fa-` + i.faIcon}></i>
-                                    </Nav.Link>
+                        {NavigationData.map((item) => <>
+                                {item.four.map((i) => <IconSocial faIcon={i.faIcon} title={'#'} href={'#'}/>
                                 )}
                             </>
                         )}
@@ -69,5 +54,7 @@ export const TopNavigationStyleOne: FC<IProps> = (props) => {
                 </Col>
             </Row>
         </Container>
-    </TopNavigationStyleOneBase>
-};
+    </TopNavigationBase>
+}
+
+export default TopNavigation

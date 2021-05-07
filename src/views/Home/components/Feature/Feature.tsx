@@ -1,9 +1,9 @@
 import React from 'react'
 import {FeatureStyle} from "./Feature.style";
 import {SectionHeader} from "../../../../components/molecules";
-import {FeatureStyleFiveContent} from "../../../../assets/content";
 import {CardFeature} from "../../../../components/organisms";
 import {Container, Row} from "react-bootstrap";
+import {FeatureData} from "../../data";
 
 const Feature = () => {
     return <FeatureStyle>
@@ -13,7 +13,7 @@ const Feature = () => {
                 subTitle={"vitae maximus nulla"}
                 title={"Everest Story 2019"}/>
             <Row className="row-two">
-                {FeatureStyleFiveContent.map((item) =>
+                {FeatureData.map((item) =>
                     <CardFeature id={item.id}
                                  href={item.href}
                                  hrefTitle={item.hrefTitle}

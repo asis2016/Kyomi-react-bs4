@@ -1,4 +1,7 @@
 export {default as Blog} from './Blog'
 export {default as Feature} from './Feature'
+export {default as Gallery} from './Gallery'
+export {default as MainHeader} from './MainHeader'
 export {default as Navigation} from './Navigation'
 export {default as Portfolio} from './Portfolio'
+export {default as TopNavigation} from './TopNavigation'

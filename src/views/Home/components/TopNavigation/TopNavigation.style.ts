@@ -1,21 +1,21 @@
 import styled from "styled-components";
-import {DefaultStyle} from "../../assets/style";
+import {DefaultStyle} from "../../../../assets/style";
 
 
-export const TopNavigationStyleOneBase = styled.div`
+export const TopNavigationBase = styled.div`
 
   background-color: ${DefaultStyle.primaryDark};
   height: 40px;
-  
-  .nav-link{
+
+  .nav-link {
     color: ${DefaultStyle.quaternary};
   }
-  
-  .col-four .nav{
+
+  .col-four .nav {
     float: right;
   }
-  
-  .col-four .nav-link{
+
+  .col-four .nav-link {
     padding-left: 0px;
   }
 

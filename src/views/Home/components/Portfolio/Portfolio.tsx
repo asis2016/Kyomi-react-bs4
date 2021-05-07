@@ -3,6 +3,7 @@ import {PortfolioStyle} from "./Portfolio.style";
 import {Card, Carousel, Col, Container, Row} from "react-bootstrap";
 import {SectionBlockquote, SectionHeader} from "../../../../components/molecules";
 import {PortfolioData} from "../../data";
+import ButtonMain from "../../../../components/atoms/ButtonMain";
 
 export const Portfolio = () => {
     return <PortfolioStyle>
@@ -44,7 +45,7 @@ export const Portfolio = () => {
 
             <SectionBlockquote href={"#"}
                                hrefTitle={"Suspendisse sodales"}
-                               text={"\"Maecenas tempor tortor in nunc consequat, id fringilla elit convallis.\""}/>
+                               text={"Get official travel information about Himalayan expedition 2021."}/>
 
             <Row className="row-four">
                 <Col className="col-one">
@@ -63,11 +64,7 @@ export const Portfolio = () => {
                         commodo pretium. In laoreet eget risus laoreet luctus. Duis venenatis tellus eu mauris commodo
                         dapibus.
                     </p>
-
-                    <button className="btn btn-primary-kyomi"><i className="fas fa-mountain"></i>
-                        Suspendisse
-                        sodales
-                    </button>
+                    <ButtonMain faIcon={"fa-mountain"} href={"#"} title={"Join us now!"}/>
                 </Col>
 
                 <Col className="col-two">

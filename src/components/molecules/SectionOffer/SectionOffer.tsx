@@ -8,7 +8,7 @@ const SectionOffer = ({href, title}:SectionOfferProps):JSX.Element => {
             <Row>
                 <Col md={{span: 6, offset: 3}} >
                     <a href={href}>
-                        <i className={`fas fa-gifts`}></i> {title} <i className={`fas fa-gifts`}></i>
+                        <i className={`fas fa-gifts pr-2`}></i> {title} <i className={`pl-2 fas fa-gifts`}></i>
                     </a>
                 </Col>
             </Row>
