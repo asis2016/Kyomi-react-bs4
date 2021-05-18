@@ -1,8 +1,8 @@
 import React from 'react'
-import {HomeBase} from './Home.style'
-import {Blog, Feature, Gallery, MainHeader, Portfolio} from './components'
-import {SectionOffer} from '../../components/molecules'
-import {Footer} from '../../components/organisms'
+import { HomeBase } from './Home.style'
+import { Blog, Feature, Gallery, MainHeader, Portfolio } from './components'
+import { SectionOffer } from '../../components/molecules'
+import { Footer } from '../../components/organisms'
 
 const Home = (): JSX.Element => {
 	return (
