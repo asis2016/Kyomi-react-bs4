@@ -1,10 +1,25 @@
-import React from 'react';
-import {AppBase} from './App.style';
-import Home from "./views/Home";
+import React from 'react'
+import { AppBase } from './App.style'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Blog, Home } from './views'
+import { Navigation, TopNavigation } from './layouts/Main/components'
 
 const App: React.FC = () => {
-    return <AppBase>
-        <Home/>
-    </AppBase>
-};
-export default App;
+	return (
+		<AppBase>
+			<Router>
+				<TopNavigation />
+				<Navigation />
+				<Switch>
+					<Route path={'/blog'}>
+						<Blog />
+					</Route>
+					<Route path={'/'}>
+						<Home />
+					</Route>
+				</Switch>
+			</Router>
+		</AppBase>
+	)
+}
+export default App

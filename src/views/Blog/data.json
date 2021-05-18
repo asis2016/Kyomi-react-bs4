@@ -1,0 +1,16 @@
+{
+  "blog":[
+    {
+      "category":"latest",
+      "post": [
+        1, 2, 3, 4
+      ]
+    },
+    {
+      "category":"popular",
+      "post": [
+        5,6,7
+      ]
+    }
+  ]
+}

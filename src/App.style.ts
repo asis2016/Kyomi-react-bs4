@@ -1,75 +1,83 @@
-import styled from "styled-components";
-import {DefaultStyle} from "./assets/style";
+import styled from 'styled-components'
+import { DefaultStyle } from './assets/style'
 
 export const AppBase = styled.div`
-  overflow: hidden;
+	overflow: hidden;
 
-  body {
-    background-color: ${DefaultStyle.bgColor};
-    font-family: ${DefaultStyle.secondaryFont};
-  }
+	body {
+		background-color: ${DefaultStyle.bgColor};
+		font-family: ${DefaultStyle.secondaryFont};
+	}
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: ${DefaultStyle.primaryFont};
-    color: ${DefaultStyle.primary};
-  }
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: ${DefaultStyle.primaryFont};
+		color: ${DefaultStyle.primary};
+	}
 
-  p, li, a, ul, .btn {
-    font-family: ${DefaultStyle.secondaryFont};
-    font-size: 1rem;
-    color: ${DefaultStyle.secondary};
-  }
+	p,
+	li,
+	a,
+	ul,
+	.btn {
+		font-family: ${DefaultStyle.secondaryFont};
+		font-size: 1rem;
+		color: ${DefaultStyle.secondary};
+	}
 
-  .sub-title {
-    font-family: ${DefaultStyle.subTitleFont};
-    font-size: 1.5rem;
-    color: ${DefaultStyle.tertiary};
-  }
+	.sub-title {
+		font-family: ${DefaultStyle.subTitleFont};
+		font-size: 1.5rem;
+		color: ${DefaultStyle.tertiary};
+	}
 
-  /* Background */
+	/* Background */
 
-  .bg-primary-lynne {
-    background: ${DefaultStyle.primary};
-  }
+	.bg-primary-lynne {
+		background: ${DefaultStyle.primary};
+	}
 
-  .bg-secondary-lynne {
-    background: ${DefaultStyle.secondary};
-  }
+	.bg-secondary-lynne {
+		background: ${DefaultStyle.secondary};
+	}
 
-  /* Buttons */
+	/* Buttons */
 
-  .btn-primary-${DefaultStyle.themeName} {
-    background: ${DefaultStyle.primary};
-    color: #fff;
-  }
+	.btn-primary-${DefaultStyle.themeName} {
+		background: ${DefaultStyle.primary};
+		color: #fff;
+	}
 
-  .btn-primary-outline-${DefaultStyle.themeName} {
-    background: none;
-    border-color: ${DefaultStyle.primary};
-    color: ${DefaultStyle.primary};
-  }
+	.btn-primary-outline-${DefaultStyle.themeName} {
+		background: none;
+		border-color: ${DefaultStyle.primary};
+		color: ${DefaultStyle.primary};
+	}
 
-  .btn-secondary-${DefaultStyle.themeName} {
-    background: ${DefaultStyle.secondary};
-    border-color: ${DefaultStyle.secondary};
-    color: #fff;
-  }
+	.btn-secondary-${DefaultStyle.themeName} {
+		background: ${DefaultStyle.secondary};
+		border-color: ${DefaultStyle.secondary};
+		color: #fff;
+	}
 
-  .btn-secondary-outline-${DefaultStyle.themeName} {
-    border-color: ${DefaultStyle.secondary};
-    color: ${DefaultStyle.secondary};
-  }
+	.btn-secondary-outline-${DefaultStyle.themeName} {
+		border-color: ${DefaultStyle.secondary};
+		color: ${DefaultStyle.secondary};
+	}
 
-  /* Badges */
+	/* Badges */
 
-  .badge-primary-${DefaultStyle.themeName} {
-    background: ${DefaultStyle.primary};
-    color: #fff;
-  }
+	.badge-primary-${DefaultStyle.themeName} {
+		background: ${DefaultStyle.primary};
+		color: #fff;
+	}
 
-  .badge-secondary-${DefaultStyle.themeName} {
-    background: ${DefaultStyle.secondary};
-    color: #fff;
-  }
-
-`;
+	.badge-secondary-${DefaultStyle.themeName} {
+		background: ${DefaultStyle.secondary};
+		color: #fff;
+	}
+`

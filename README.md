@@ -5,3 +5,7 @@ Kyomi is a React Bootstrap 4 template for Mountaineering expedition. This projec
 
 ## Screenshot
 ![Screenshot](/screenshot.png)
+
+## Start a Project
+
+    $ npm run start

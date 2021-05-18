@@ -11,3 +11,4 @@ const Brand = ({brandName, href}:BrandProps):JSX.Element => {
 }
 
 export default Brand
+
