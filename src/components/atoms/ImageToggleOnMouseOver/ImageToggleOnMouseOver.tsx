@@ -11,14 +11,12 @@ import { Image } from 'react-bootstrap'
 const ImageToggleOnMouseOver = ({
 	primaryImage,
 	secondaryImage,
-}: ImageToggleOnMouseOverProps) => {
+}: ImageToggleOnMouseOverProps): JSX.Element => {
 	const imageRef = useRef<HTMLImageElement>(null)
 
 	const imageStyle = {
 		height: '150px',
 	}
-
-	console.log(imageRef)
 
 	return (
 		<Image

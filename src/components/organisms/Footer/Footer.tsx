@@ -31,12 +31,12 @@ const Footer = (): JSX.Element => {
 					</Col>
 
 					{/* Col 4 */}
-					{FooterData.map((item) => (
-						<Col>
+					{FooterData.map((item, index) => (
+						<Col key={index}>
 							<h5>{item.title}</h5>
 							<ul>
-								{item.content.map((i) => (
-									<a className='none' href={i.menuUrl}>
+								{item.content.map((i, index) => (
+									<a className='none' href={i.menuUrl} key={index}>
 										<li>{i.menuIitle}</li>
 									</a>
 								))}

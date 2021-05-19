@@ -17,13 +17,14 @@ const Feature = () => {
 					title={'Everest Story 2019'}
 				/>
 				<Row className='row-two'>
-					{FeatureData.map((item) => (
+					{FeatureData.map((item, index) => (
 						<CardFeature
 							id={item.id}
 							href={item.href}
 							hrefTitle={item.hrefTitle}
 							title={item.title}
 							image={item.img}
+							key={index}
 						/>
 					))}
 				</Row>

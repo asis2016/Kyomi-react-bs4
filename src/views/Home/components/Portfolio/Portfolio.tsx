@@ -29,8 +29,8 @@ export const Portfolio = () => {
 
 					<Col className='d-flex justify-content-center align-items-center'>
 						<Carousel>
-							{PortfolioData.map((item) => (
-								<Carousel.Item>
+							{PortfolioData.map((item, index) => (
+								<Carousel.Item key={index}>
 									<Card>
 										<Card.Body>
 											<img src={item.img} alt={item.name} />

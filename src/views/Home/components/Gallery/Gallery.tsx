@@ -32,8 +32,13 @@ const Gallery = () => {
 				</SectionHeader>
 				<Row>
 					<Col md={{ span: 10, offset: 1 }} className='text-center'>
-						{GalleryData.map((item) => (
-							<HomeGallery tag={item.tag} image={item.img} title={item.title} />
+						{GalleryData.map((item, index) => (
+							<HomeGallery
+								tag={item.tag}
+								image={item.img}
+								title={item.title}
+								key={index}
+							/>
 						))}
 					</Col>
 				</Row>

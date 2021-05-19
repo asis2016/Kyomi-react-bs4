@@ -9,7 +9,7 @@ const AboutData = [
 	{
 		primaryImage: 'about-1.png',
 		secondaryImage: 'about-1-bw.png',
-		name: 'Jane Doe',
+		name: 'Mr. Uncle Sam',
 	},
 	{
 		primaryImage: 'about-2.png',
@@ -19,7 +19,7 @@ const AboutData = [
 	{
 		primaryImage: 'about-3.jpg',
 		secondaryImage: 'about-3-bw.jpg',
-		name: 'Jane Doe',
+		name: 'Michael Harris',
 	},
 ]
 
@@ -41,7 +41,7 @@ const About = () => {
 		<AboutBase>
 			<SectionHeader
 				title='About'
-				description='lorem ipsum'
+				description='Lorem ipsum Nullam id dolor id nibh ultricies vehicula ut id elit.'
 				subTitle='Welcome to the Kyomi team.'
 			/>
 
@@ -50,11 +50,8 @@ const About = () => {
 					{AboutData.map((employee, index) => (
 						<Col lg={4} className={'text-center'} key={index}>
 							<ImageToggleOnMouseOver
-								primaryImage={
-									'https://raw.githubusercontent.com/asis2016/kyomi-react-bootstrap4/main/src/assets/images/' +
-									employee.primaryImage
-								}
-								secondaryImage='https://raw.githubusercontent.com/asis2016/kyomi-react-bootstrap4/main/src/assets/images/about-2.png'
+								primaryImage={`https://raw.githubusercontent.com/asis2016/kyomi-react-bootstrap4/main/src/assets/images/${employee.primaryImage}`}
+								secondaryImage={`https://raw.githubusercontent.com/asis2016/kyomi-react-bootstrap4/main/src/assets/images/${employee.secondaryImage}`}
 							/>
 							<h2 className={'pt-2'}>{employee.name}</h2>
 							<p>

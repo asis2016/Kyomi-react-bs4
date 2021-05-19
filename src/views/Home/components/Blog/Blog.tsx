@@ -4,6 +4,7 @@ import { CardBlogPost } from '../../../../components/organisms'
 import { SectionHeader } from '../../../../components/molecules'
 import { BlogStyle } from './Blog.style'
 import axios from 'axios'
+import { Spinner } from '../../../../components/atoms'
 
 interface IPost {
 	title: string
@@ -19,10 +20,13 @@ interface IPost {
 const Blog = () => {
 	const [blog, setBlog] = useState<IPost[]>([])
 
+	const [isLoading, setIsLoading] = useState(true)
+
 	useEffect(() => {
-		axios
-			.get('http://localhost:3001/blog')
-			.then((response) => setBlog(response.data))
+		axios.get('http://localhost:3001/blog').then((response) => {
+			setIsLoading(false)
+			setBlog(response.data)
+		})
 	}, [])
 
 	return (
@@ -34,9 +38,11 @@ const Blog = () => {
 				title={'From the Blog'}
 			/>
 			<Row>
-				{blog.length > 0 ? (
-					blog.map((item) => (
-						<Col xs={3}>
+				{isLoading ? (
+					<Spinner />
+				) : blog.length > 0 ? (
+					blog.map((item, index) => (
+						<Col xs={3} key={index}>
 							<CardBlogPost
 								title={item.title}
 								image={item.img}
