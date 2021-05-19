@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { TopNavigationBase } from './TopNavigation.style'
 import { Col, Container, Nav, NavDropdown, Row } from 'react-bootstrap'
 import { NavigationData } from '../../../../views/Home/data'
@@ -46,8 +46,8 @@ const TopNavigation = () => {
 					{/* Menu 4 */}
 					<Col md={3} className='ml-auto col-four'>
 						<Nav>
-							{NavigationData.map((item) => (
-								<>
+							{NavigationData.map((item, index) => (
+								<Fragment key={index}>
 									{item.four.map((i, index) => (
 										<IconSocial
 											key={index}
@@ -56,7 +56,7 @@ const TopNavigation = () => {
 											href={'#'}
 										/>
 									))}
-								</>
+								</Fragment>
 							))}
 						</Nav>
 					</Col>

@@ -1,8 +1,17 @@
 import React, { Fragment, useEffect } from 'react'
 import { Col, Container, Image, Row } from 'react-bootstrap'
 import api from '../../api/contacts'
+import { ImageToggleOnMouseOver } from '../../components/atoms'
 import { SectionHeader } from '../../components/molecules'
 import { AboutBase } from './About.style'
+
+const AboutData = [
+	{
+		primaryImage: 'about-2.png',
+		secondaryImage: 'about-2-bw.png',
+		title: 'Jane Doe',
+	},
+]
 
 const About = () => {
 	// get contacts
@@ -29,9 +38,9 @@ const About = () => {
 			<Container>
 				<Row>
 					<Col lg={4} className={'text-center'}>
-						<Image
-							roundedCircle={true}
-							src='https://via.placeholder.com/150x150'
+						<ImageToggleOnMouseOver
+							primaryImage='https://raw.githubusercontent.com/asis2016/kyomi-react-bootstrap4/main/src/assets/images/about-1.png'
+							secondaryImage='https://raw.githubusercontent.com/asis2016/kyomi-react-bootstrap4/main/src/assets/images/about-2.png'
 						/>
 						<h2 className={'pt-2'}>Heading</h2>
 						<p>
