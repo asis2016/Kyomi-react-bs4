@@ -1,3 +1,3 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const BrandStyle = styled.div``;
+export const BrandStyle = styled.div``

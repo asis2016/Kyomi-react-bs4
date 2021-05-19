@@ -1,9 +1,11 @@
+/**
+ * An interface card for a blog post.
+ */
 interface CardBlogPostProps {
-    /**
-     * Card blog post. */
-    author: string; /* todo: author can be an atom.*/
-    boxShadow?: boolean;
-    excerpt: string;
-    image: string;
-    title: string;
+	// todo: author can be an atom.
+	author: string
+	boxShadow?: boolean
+	excerpt: string
+	image: string
+	title: string
 }

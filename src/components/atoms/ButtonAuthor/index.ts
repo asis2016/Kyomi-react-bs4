@@ -1,1 +1,1 @@
-export {default} from './ButtonAuthor'
+export { default } from './ButtonAuthor'

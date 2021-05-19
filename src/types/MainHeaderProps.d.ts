@@ -1,6 +1,8 @@
+/**
+ * An interface for MainHeader component.
+ */
 interface MainHeaderProps {
-    /**
-     * Interface for main header. */
-    title: string;
-    subTitle: string;
+	// title is self explainatory.
+	title: string
+	subTitle: string
 }

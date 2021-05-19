@@ -1,12 +1,16 @@
+/**
+ * HomeGallery Props
+ */
 interface HomeGalleryProps {
-    /**
-     * className: CSS classname optional.
-     * children: The children content(s).
-     * tag: The tag name. For e.g. Latest, New, Trending, etc.
-     * image: image name. For e.g. '1.png' */
-    className?: string;
-    children?: JSX.Element;
-    tag: string;
-    title: string;
-    image: string;
+	/**
+	 * className: CSS classname optional.
+	 * children: The children content(s).
+	 *
+	 * */
+	className?: string
+	children?: JSX.Element
+	// tag: The tag name. For e.g. Latest, New, Trending, etc.
+	tag: string
+	title: string
+	image: string
 }

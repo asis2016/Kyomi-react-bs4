@@ -1,14 +1,20 @@
 import React from 'react'
-import {ButtonAuthorStyle} from "./ButtonAuthor.style";
+import { ButtonAuthorStyle } from './ButtonAuthor.style'
 
-const ButtonAuthor = ({authorName, href}: ButtonAuthorProps): JSX.Element => {
-    /**
-     *  Clickable link (button) for an author. */
-    return <ButtonAuthorStyle>
-        <a href={href}>
-            <i className="fas fa-pen-square"></i> {authorName}
-        </a>
-    </ButtonAuthorStyle>
+/**
+ *  A link button for an author.
+ *
+ * @params Props from src/types/ButtonAuthorProps
+ * @returns A JSX.Element
+ */
+const ButtonAuthor = ({ authorName, href }: ButtonAuthorProps): JSX.Element => {
+	return (
+		<ButtonAuthorStyle>
+			<a href={href}>
+				<i className='fas fa-pen-square'></i> {authorName}
+			</a>
+		</ButtonAuthorStyle>
+	)
 }
 
 export default ButtonAuthor
