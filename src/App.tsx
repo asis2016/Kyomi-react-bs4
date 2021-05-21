@@ -1,7 +1,7 @@
 import React from 'react'
 import { AppBase } from './App.style'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { About, Blog, Home } from './views'
+import { About, Blog, Home, Post, Vacancy } from './views'
 import { Navigation, TopNavigation } from './layouts/Main/components'
 
 const App: React.FC = () => {
@@ -16,6 +16,12 @@ const App: React.FC = () => {
 					</Route>
 					<Route path={'/blog'}>
 						<Blog />
+					</Route>
+					<Route path={'/post'}>
+						<Post />
+					</Route>
+					<Route path={'/vacancy'}>
+						<Vacancy />
 					</Route>
 					<Route path={'/'}>
 						<Home />

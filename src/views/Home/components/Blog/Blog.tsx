@@ -6,28 +6,23 @@ import { BlogStyle } from './Blog.style'
 import axios from 'axios'
 import { Spinner } from '../../../../components/atoms'
 
-interface IPost {
-	title: string
-	img: string
-	shortContent: string
-	author: string
-}
-
 /**
  * A blog component that can be used inside any views.
  * @returns A Blog component.
  */
 const Blog = () => {
-	const [blog, setBlog] = useState<IPost[]>([])
-
+	const [blog, setBlog] = useState<PostProps[]>([]);
 	const [isLoading, setIsLoading] = useState(true)
 
 	useEffect(() => {
-		axios.get('http://localhost:3001/blog').then((response) => {
+		axios.get('http://localhost:3001/blog')
+		.then((response) => {
 			setIsLoading(false)
 			setBlog(response.data)
 		})
 	}, [])
+
+
 
 	return (
 		<BlogStyle>

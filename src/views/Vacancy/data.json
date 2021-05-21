@@ -1,0 +1,28 @@
+{
+"data":[
+		{
+      "title": "Human Resources Manager (m/w/d)",
+      "location": "Berlin",
+      "status": "Full-time",
+      "content": "<p>Requirements:</p><ul><li>20 years of experience.</li><li>You must know everything.</li></ul>"
+    },
+		{
+			"title": "Service Technicians / Kfz-Mechatroniker (m/w/d)",
+			"location": "Kathmandu",
+			"status": "Full-time",
+			"content": "<p>Requirements:</p><ul><li>Problem-solver.</li></ul>"
+		},
+		{
+			"title": "Security Systems Project Engineer (m/w/d)",
+			"location": "New York",
+			"status": "Full-time",
+			"content": "<p>Requirements:</p><ul><li>Manage the entire lifecycle of technical security systems design and improvement projects.</li></ul>"
+		},
+		{
+			"title": "Software Engineer Test, Autopilot (m/w/d)",
+			"location": "Kathmandu",
+			"status": "Full-time",
+			"content": "<p>Requirements:</p><ul><li>You must know software engineering.</li></ul>"
+    	}
+	]
+}

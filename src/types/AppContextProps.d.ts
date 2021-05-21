@@ -1,0 +1,3 @@
+interface AppContextProps {
+  showCurrency: false;
+}
