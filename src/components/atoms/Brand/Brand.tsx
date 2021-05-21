@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrandStyle } from './Brand.style'
 import { Navbar } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 /**
  * A navigation brand on top-left main navigation.
@@ -11,9 +12,9 @@ import { Navbar } from 'react-bootstrap'
 const Brand = ({ brandName, href }: BrandProps): JSX.Element => {
 	return (
 		<BrandStyle>
-			<Navbar.Brand href={href}>
+			<Link className='navbar-brand' to={href}>
 				<i className='fas fa-mountain'></i> {brandName}
-			</Navbar.Brand>
+			</Link>
 		</BrandStyle>
 	)
 }

@@ -11,18 +11,15 @@ import { Spinner } from '../../../../components/atoms'
  * @returns A Blog component.
  */
 const Blog = () => {
-	const [blog, setBlog] = useState<PostProps[]>([]);
+	const [blog, setBlog] = useState<PostProps[]>([])
 	const [isLoading, setIsLoading] = useState(true)
 
 	useEffect(() => {
-		axios.get('http://localhost:3001/blog')
-		.then((response) => {
+		axios.get('http://localhost:3001/blog').then((response) => {
 			setIsLoading(false)
 			setBlog(response.data)
 		})
 	}, [])
-
-
 
 	return (
 		<BlogStyle>

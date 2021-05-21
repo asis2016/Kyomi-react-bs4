@@ -10,4 +10,5 @@ export const SpinnerBase = styled.div`
 	.iconLoading {
 		animation: spin 1.5s linear infinite;
 	}
+	text-align: center;
 `
