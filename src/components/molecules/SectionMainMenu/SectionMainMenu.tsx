@@ -13,14 +13,19 @@ const SectionMainMenu = () => {
 				<Link to={'/blog'} className='nav-link'>
 					Blog
 				</Link>
-				<Nav.Link href='#'>Shop</Nav.Link>
-				<Link to={'vacancy'} className='nav-link'>
+				<Link to={'/shop'} className='nav-link'>
+					Shop
+				</Link>
+				<Link to={'/vacancy'} className='nav-link'>
 					Jobs
 				</Link>
 				<NavDropdown title='Who are we' id='basic-nav-dropdown'>
-					<NavDropdown.Item href='#action/3.1'>Contact us</NavDropdown.Item>
-					<NavDropdown.Item href='#action/3.2'>About us</NavDropdown.Item>
-					<NavDropdown.Item href='#action/3.3'>Our Team</NavDropdown.Item>
+					<Link to={'/contact'} className='dropdown-item'>
+						Contact us
+					</Link>
+					<Link to={'/about'} className='dropdown-item'>
+						About us
+					</Link>
 				</NavDropdown>
 			</Nav>
 		</SectionMainMenuStyle>

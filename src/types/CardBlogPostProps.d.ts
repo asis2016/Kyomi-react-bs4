@@ -1,11 +1,6 @@
 /**
  * An interface card for a blog post.
  */
-interface CardBlogPostProps {
-	// todo: author can be an atom.
-	author: string
+interface CardBlogPostProps extends PostProps {
 	boxShadow?: boolean
-	excerpt: string
-	image: string
-	title: string
 }

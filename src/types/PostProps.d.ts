@@ -1,6 +1,11 @@
+/**
+ * This is an "global" interface.
+ */
 interface PostProps {
-  title: string;
-  img: string;
-  shortContent: string;
-  author: string;
+	id?: number
+	title: string
+	author: string
+	image: string
+	excerpt?: string
+	createDate?: string
 }

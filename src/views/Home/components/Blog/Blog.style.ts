@@ -6,10 +6,6 @@ export const BlogStyle = styled(Container)`
 	padding: ${DefaultStyle.sectionPaddingTopBottom} 0px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
-	.card {
-		border: none;
-	}
-
 	.card-body {
 		padding: 1.25rem 0;
 	}

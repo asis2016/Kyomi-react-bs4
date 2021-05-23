@@ -8,6 +8,7 @@ import { Spinner } from '../../../../components/atoms'
 
 /**
  * A blog component that can be used inside any views.
+ *
  * @returns A Blog component.
  */
 const Blog = () => {
@@ -37,8 +38,8 @@ const Blog = () => {
 						<Col xs={3} key={index}>
 							<CardBlogPost
 								title={item.title}
-								image={item.img}
-								excerpt={item.shortContent}
+								image={item.image}
+								excerpt={item.excerpt}
 								author={item.author}
 							/>
 						</Col>

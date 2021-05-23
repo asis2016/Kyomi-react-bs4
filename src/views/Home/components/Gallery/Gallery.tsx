@@ -1,11 +1,27 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { GalleryBase } from './Gallery.style'
-import { HomeGallery } from '../../../../components/atoms'
+import { HomeGallery, Spinner } from '../../../../components/atoms'
 import { SectionHeader } from '../../../../components/molecules'
-import { GalleryData } from '../../data'
+import axios from 'axios'
 
-const Gallery = () => {
+/**
+ * A gallery section for a homepage.
+ *
+ * @returns A JSX.Element
+ */
+const Gallery = (): JSX.Element => {
+	const [gallery, setGallery] = useState<GalleryProps[]>([])
+	const [isLoading, setIsLoading] = useState(true)
+
+	useEffect(() => {
+		axios.get('http://localhost:3001/gallery').then((response) => {
+			setGallery(response.data)
+			setIsLoading(false)
+		})
+		return () => console.log('cleanup')
+	}, [])
+
 	return (
 		<GalleryBase>
 			<Container>
@@ -14,7 +30,8 @@ const Gallery = () => {
         feugiat congue ut at leo. Curabitur accumsan placerat dapibus. Proin nec enim nec dui pretium
         at tellus non, vehicula egestas justo. `}
 					subTitle={'Sed cursus metus eget orci iaculis'}
-					title={'Instagram Gallery'}>
+					title={'Instagram Gallery'}
+				>
 					<div>
 						<button type='button' className='btn btn-primary-kyomi mr-2'>
 							Latest
@@ -32,14 +49,20 @@ const Gallery = () => {
 				</SectionHeader>
 				<Row>
 					<Col md={{ span: 10, offset: 1 }} className='text-center'>
-						{GalleryData.map((item, index) => (
-							<HomeGallery
-								tag={item.tag}
-								image={item.img}
-								title={item.title}
-								key={index}
-							/>
-						))}
+						{isLoading ? (
+							<Spinner />
+						) : gallery && gallery.length === 0 ? (
+							'No record found'
+						) : (
+							gallery.map((item, index) => (
+								<HomeGallery
+									key={index}
+									tag={item.tag}
+									image={item.image}
+									title={item.title}
+								/>
+							))
+						)}
 					</Col>
 				</Row>
 			</Container>

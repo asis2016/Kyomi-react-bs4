@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const CardBlogPostStyle = styled.div`
-  color: rebeccapurple;
-`;
+	color: rebeccapurple;
+`
 
 export default CardBlogPostStyle
