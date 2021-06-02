@@ -15,7 +15,7 @@ const Gallery = (): JSX.Element => {
 	const [isLoading, setIsLoading] = useState(true)
 
 	useEffect(() => {
-		axios.get('http://localhost:3001/gallery').then((response) => {
+		axios.get('/json-server/kyomi/gallery.json').then((response) => {
 			setGallery(response.data)
 			setIsLoading(false)
 		})

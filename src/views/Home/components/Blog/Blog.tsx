@@ -16,7 +16,7 @@ const Blog = () => {
 	const [isLoading, setIsLoading] = useState(true)
 
 	useEffect(() => {
-		axios.get('http://localhost:3001/blog').then((response) => {
+		axios.get('/json-server/kyomi/blog.json').then((response) => {
 			setIsLoading(false)
 			setBlog(response.data)
 		})

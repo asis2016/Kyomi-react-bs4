@@ -15,7 +15,7 @@ const Vacancy = (): JSX.Element => {
 	const [vacancy, setVacancy] = useState([])
 	const [isLoading, setIsLoading] = useState(true)
 	useEffect(() => {
-		axios.get('http://localhost:3001/jobs').then((response) => {
+		axios.get('/json-server/kyomi/jobs.json').then((response) => {
 			setVacancy(response.data)
 			setIsLoading(false)
 		})
