@@ -2,7 +2,7 @@
   "name": "kyomi",
   "version": "1.0.0",
   "private": true,
-  "proxy": "https://amaharjan.com/",
+  "proxy": "https://amaharjan.com",
   "homepage": "https://github.com/asis2016/kyomi-react-bootstrap4",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
