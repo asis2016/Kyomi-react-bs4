@@ -1,4 +1,4 @@
-# Kyomi React BS4 
+# Kyomi Mountaineering & Expedition
 Kyomi is a free React / TypeScript, Bootstrap 4 template made for Mountaineering expedition. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Tech Stack
