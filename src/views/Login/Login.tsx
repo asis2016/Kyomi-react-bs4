@@ -27,6 +27,11 @@ const Login = (): JSX.Element => {
             <p className="forgot">
                 Forgot your email or password?
             </p>
+            <p className="go-back">
+                <Link to={'/'}>
+                    Go to Home
+                </Link>
+            </p>
         </form>
     </LoginBase>
 }

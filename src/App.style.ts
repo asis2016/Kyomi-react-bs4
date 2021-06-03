@@ -7,6 +7,7 @@ export const AppBase = styled.div`
 	body {
 		background-color: ${DefaultStyle.bgColor};
 		font-family: ${DefaultStyle.secondaryFont};
+        color: #121212;
 	}
 
 	h1,
@@ -26,8 +27,11 @@ export const AppBase = styled.div`
 	.btn {
 		font-family: ${DefaultStyle.secondaryFont};
 		font-size: 1rem;
-		color: ${DefaultStyle.secondary};
 	}
+  
+      a, .btn {
+        color: ${DefaultStyle.secondary};
+      }
 
 	.sub-title {
 		font-family: ${DefaultStyle.subTitleFont};
@@ -80,4 +84,11 @@ export const AppBase = styled.div`
 		background: ${DefaultStyle.secondary};
 		color: #fff;
 	}
+  
+  /* Card */
+  .card{
+    .card-text{
+      color: #121212;
+    }
+  }
 `

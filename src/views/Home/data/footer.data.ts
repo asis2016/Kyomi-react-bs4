@@ -1,67 +1,67 @@
 const FooterData = [
 	{
 		id: 1,
-		title: 'Sed sit amet',
+		title: 'Places To See',
 		content: [
 			{
-				menuIitle: 'Nulla ac',
-				menuUrl: 'http://google.com',
+				menuIitle: 'Everest',
+				menuUrl: 'https://www.welcomenepal.com',
 			},
 			{
-				menuIitle: 'Donec maximus vel',
-				menuUrl: 'http://google.com',
+				menuIitle: 'Beautiful Dolpo',
+				menuUrl: 'https://www.welcomenepal.com',
 			},
 			{
-				menuIitle: 'Vivamus vel',
-				menuUrl: 'http://google.com',
+				menuIitle: 'Chitwan Safari',
+				menuUrl: 'https://www.welcomenepal.com',
 			},
 			{
-				menuIitle: 'Etiam laoreet',
-				menuUrl: 'http://google.com',
+				menuIitle: 'Gokyo valley',
+				menuUrl: 'https://www.welcomenepal.com',
 			},
 		],
 	},
 	{
 		id: 2,
-		title: 'Nam lacinia',
+		title: 'Adventures',
 		content: [
 			{
-				menuIitle: 'Nulla ac',
-				menuUrl: 'http://google.com',
+				menuIitle: 'Mountaineering',
+				menuUrl: 'https://www.welcomenepal.com',
 			},
 			{
-				menuIitle: 'Phasellus placerat',
-				menuUrl: 'http://google.com',
+				menuIitle: 'Spirituality',
+				menuUrl: 'https://www.welcomenepal.com',
 			},
 			{
-				menuIitle: 'Ass non odio ',
-				menuUrl: 'http://google.com',
+				menuIitle: 'Pashupatinath',
+				menuUrl: 'https://www.welcomenepal.com',
 			},
 			{
-				menuIitle: 'Vivamus vel',
-				menuUrl: 'http://google.com',
+				menuIitle: 'Mountain Flights',
+				menuUrl: 'https://www.welcomenepal.com',
 			},
 		],
 	},
 	{
 		id: 3,
-		title: 'Etiam eget ante',
+		title: 'Plan Your Trip',
 		content: [
 			{
-				menuIitle: 'In dapibus arcu',
-				menuUrl: 'http://google.com',
+				menuIitle: 'Trip Ideas',
+				menuUrl: 'https://www.welcomenepal.com',
 			},
 			{
-				menuIitle: 'Phasellus placerat',
-				menuUrl: 'http://google.com',
+				menuIitle: 'About Nepal',
+				menuUrl: 'https://www.welcomenepal.com',
 			},
 			{
-				menuIitle: 'Ass non odio ',
-				menuUrl: 'http://google.com',
+				menuIitle: 'Wildlife',
+				menuUrl: 'https://www.welcomenepal.com',
 			},
 			{
-				menuIitle: 'Vivamus vel',
-				menuUrl: 'http://google.com',
+				menuIitle: 'Climate',
+				menuUrl: 'https://www.welcomenepal.com',
 			},
 		],
 	},

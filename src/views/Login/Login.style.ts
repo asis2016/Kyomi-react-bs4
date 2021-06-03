@@ -64,6 +64,20 @@ export const LoginBase = styled.div`
       }
     }
 
+    .go-back a{
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      opacity: 0.9;
+      text-decoration: none;
+
+      &:hover, &:active {
+        opacity: 1;
+        text-decoration: none;
+      }
+    }
+
    
   }
 

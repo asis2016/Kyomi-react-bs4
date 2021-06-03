@@ -10,9 +10,4 @@ export const GalleryBase = styled.div`
   p {
     color: ${DefaultStyle.primary};
   }
-
-  p,
-  .sub-title {
-    color: ${DefaultStyle.secondary};
-  }
 `;

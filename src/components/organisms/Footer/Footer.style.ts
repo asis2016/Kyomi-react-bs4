@@ -1,30 +1,32 @@
 import styled from "styled-components";
+import footerBG from '../../../assets/images/footer-bg.png'
 
 
 export const FooterBase = styled.div`
-  background-image: url("https://raw.githubusercontent.com/asis2016/kyomi-react-bootstrap4/master/src/assets/images/mountain.jpg");
-  padding-top: 50px;
+  /*background-image: url("https://raw.githubusercontent.com/asis2016/kyomi-react-bootstrap4/master/src/assets/images/mountain.jpg");*/
+  background-image: url(${footerBG});
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  min-height: 200px;
+  background-position: top;
+  margin-top: 100px;
+  padding-bottom: 150px;
+  min-height: 300px;
 
-  .row-two {
-    margin-top: 50px;
-    margin-bottom: 50px;
+  .row {
+    margin-top: 150px;
+
+    .col-one {
+      padding-right: 50px;
+    }
+    
+
+    .fa-heart:before{
+      color: red;
+    }
   }
 
-  .row-two .col-one {
-    padding-right: 50px;
-  }
-
-
-  .row-two ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  .row-two li {
-    list-style: none;
-  }
+  @media (min-width: 1199px) {
+    min-height: 600px;
+  } 
 
 `;

@@ -7,13 +7,17 @@ const Footer = (): JSX.Element => {
 	return (
 		<FooterBase>
 			<Container>
-				<Row className='row-two'>
+				<Row>
 					<Col xs={6} className='col-one'>
 						<h5>Kyomi Everest Expedition</h5>
 						<p>
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 							accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
 							quae ab illo inventore veritatis et quasi beatae vitae dicta sunt.
+						</p>
+
+						<p>
+							Made with <i className='fas fa-heart'></i> in Germany.
 						</p>
 
 						<form className='form-inline'>
@@ -36,23 +40,13 @@ const Footer = (): JSX.Element => {
 							<h5>{item.title}</h5>
 							<ul>
 								{item.content.map((i, index) => (
-									<a className='none' href={i.menuUrl} key={index}>
+									<a className='none' href={i.menuUrl} target="_blank" key={index}>
 										<li>{i.menuIitle}</li>
 									</a>
 								))}
 							</ul>
 						</Col>
 					))}
-				</Row>
-
-				<hr />
-
-				<Row className='row-three'>
-					<Col className={'text-right'}>
-						<p>
-							Made with <i className='fas fa-heart'></i> in Germany.
-						</p>
-					</Col>
 				</Row>
 			</Container>
 		</FooterBase>
