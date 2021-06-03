@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.96cda552.chunk.css",
+    "main.js": "/static/js/main.9c510735.chunk.js",
+    "main.js.map": "/static/js/main.9c510735.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.322b4d90.js",
+    "runtime-main.js.map": "/static/js/runtime-main.322b4d90.js.map",
+    "static/css/2.9233ae65.chunk.css": "/static/css/2.9233ae65.chunk.css",
+    "static/js/2.89b340f8.chunk.js": "/static/js/2.89b340f8.chunk.js",
+    "static/js/2.89b340f8.chunk.js.map": "/static/js/2.89b340f8.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.c370a06e80fa92d8e11d4fc123d7e681.js": "/precache-manifest.c370a06e80fa92d8e11d4fc123d7e681.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.9233ae65.chunk.css.map": "/static/css/2.9233ae65.chunk.css.map",
+    "static/css/main.96cda552.chunk.css.map": "/static/css/main.96cda552.chunk.css.map",
+    "static/media/footer-bg.png": "/static/media/footer-bg.f2b0d70c.png",
+    "static/media/ionicons.min.css": "/static/media/ionicons.621bd386.svg",
+    "static/media/login-bg-2.jpg": "/static/media/login-bg-2.c2cfe8e2.jpg",
+    "static/media/phone.svg": "/static/media/phone.d95a6b11.svg",
+    "static/media/screen-content-phone.jpg": "/static/media/screen-content-phone.a1a78cc5.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.322b4d90.js",
+    "static/css/2.9233ae65.chunk.css",
+    "static/js/2.89b340f8.chunk.js",
+    "static/css/main.96cda552.chunk.css",
+    "static/js/main.9c510735.chunk.js"
+  ]
+}
