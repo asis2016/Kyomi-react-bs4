@@ -5,6 +5,7 @@ import { SectionHeader } from '../../../../components/molecules'
 import { BlogStyle } from './Blog.style'
 import axios from 'axios'
 import { Spinner } from '../../../../components/atoms'
+import {blogData} from "./data";
 
 /**
  * A blog component that can be used inside any views.
@@ -13,14 +14,15 @@ import { Spinner } from '../../../../components/atoms'
  */
 const Blog = () => {
 	const [blog, setBlog] = useState<PostProps[]>([])
-	const [isLoading, setIsLoading] = useState(true)
+	const [isLoading, setIsLoading] = useState(false)
 
+	/* todo: for netlify
 	useEffect(() => {
 		axios.get('/json-server/kyomi/blog.json').then((response) => {
-			setIsLoading(false)
-			setBlog(response.data)
+			// setIsLoading(false)
+			// setBlog(response.data)
 		})
-	}, [])
+	}, [])*/
 
 	return (
 		<BlogStyle>
@@ -33,8 +35,7 @@ const Blog = () => {
 			<Row>
 				{isLoading ? (
 					<Spinner />
-				) : blog.length > 0 ? (
-					blog.map((item, index) => (
+				) : (blogData.map((item, index) => (
 						<Col xs={3} key={index}>
 							<CardBlogPost
 								title={item.title}
@@ -44,8 +45,6 @@ const Blog = () => {
 							/>
 						</Col>
 					))
-				) : (
-					<div>No record found.</div>
 				)}
 			</Row>
 		</BlogStyle>

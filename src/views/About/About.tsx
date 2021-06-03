@@ -4,6 +4,7 @@ import api from './contacts'
 import { ImageToggleOnMouseOver } from '../../components/atoms'
 import { SectionHeader } from '../../components/molecules'
 import { AboutBase } from './About.style'
+import {Footer, Highlight} from "../../components/organisms";
 
 const AboutData = [
 	{
@@ -45,7 +46,7 @@ const About = () => {
 				subTitle='Welcome to the Kyomi team.'
 			/>
 
-			<Container>
+			<Container className="about-content">
 				<Row>
 					{AboutData.map((employee, index) => (
 						<Col lg={4} className={'text-center'} key={index}>
@@ -64,6 +65,9 @@ const About = () => {
 					))}
 				</Row>
 			</Container>
+
+			<Highlight />
+			<Footer/>
 		</AboutBase>
 	)
 }

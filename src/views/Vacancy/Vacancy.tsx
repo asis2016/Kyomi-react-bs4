@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { CardInformation } from '../../components/organisms/'
+import {CardInformation, Footer, Highlight} from '../../components/organisms/'
 import { VacancyBase } from './Vacancy.style'
-import { data } from './data.json'
+import { vacancy } from './data.json'
 import axios from 'axios'
 import { Spinner } from '../../components/atoms'
 
@@ -12,8 +12,10 @@ import { Spinner } from '../../components/atoms'
  * @returns JSX.Element
  */
 const Vacancy = (): JSX.Element => {
-	const [vacancy, setVacancy] = useState([])
-	const [isLoading, setIsLoading] = useState(true)
+	//const [vacancy, setVacancy] = useState([])
+	const [isLoading, setIsLoading] = useState(false)
+
+	/* todo: netlify
 	useEffect(() => {
 		axios.get('/json-server/kyomi/jobs.json').then((response) => {
 			setVacancy(response.data)
@@ -22,14 +24,14 @@ const Vacancy = (): JSX.Element => {
 		return () => {
 			console.log('cleanup code.')
 		}
-	}, [])
+	}, [])*/
 
 	return (
 		<VacancyBase>
 			{isLoading ? (
 				<Spinner />
 			) : (
-				<Container className={'pt-4'}>
+				<Container style={{marginBottom: '170px', marginTop:'170px'}}>
 					<Row>
 						<Col md={{ span: 8, offset: 2 }}>
 							<h1 className='pt-4 pb-4'>Vacancy</h1>
@@ -49,6 +51,8 @@ const Vacancy = (): JSX.Element => {
 					</Row>
 				</Container>
 			)}
+			<Highlight/>
+			<Footer/>
 		</VacancyBase>
 	)
 }

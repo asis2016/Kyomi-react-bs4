@@ -13,7 +13,7 @@ const SectionMainMenu = () => {
 				<Link to={'/blog'} className='nav-link'>
 					Blog
 				</Link>
-				<Link to={'/shop'} className='nav-link'>
+				<Link to={'/underconstruction'} className='nav-link'>
 					Shop
 				</Link>
 				<Link to={'/vacancy'} className='nav-link'>
@@ -27,6 +27,10 @@ const SectionMainMenu = () => {
 						About us
 					</Link>
 				</NavDropdown>
+
+				<Link to={'/login'} className='nav-link'>
+					Sign In
+				</Link>
 			</Nav>
 		</SectionMainMenuStyle>
 	)

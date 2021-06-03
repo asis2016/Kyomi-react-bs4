@@ -3,8 +3,8 @@ import React, { useState, useEffect } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Spinner } from '../../components/atoms'
 import { SectionHeader } from '../../components/molecules'
-import { CardBlogPost } from '../../components/organisms'
-import { blog } from './data.json'
+import {CardBlogPost, Footer, Highlight} from '../../components/organisms'
+import { blog, category } from './data.json'
 
 /**
  * A blog view.
@@ -14,16 +14,17 @@ import { blog } from './data.json'
 const Blog = (): JSX.Element => {
 	const [categoryIndex, setCategoryIndex] = useState(0)
 
-	const [blog, setBlog] = useState<PostProps[]>([])
-	const [isLoading, setIsloading] = useState(true)
+	//const [blog, setBlog] = useState<PostProps[]>([])
+	const [isLoading, setIsloading] = useState(false)
 
+	/* todo: netlify
 	useEffect(() => {
 		axios.get('/json-server/kyomi/blog.json').then((response) => {
 			setBlog(response.data)
 			setIsloading(false)
 		})
 		return () => console.log('cleanup')
-	}, [])
+	}, [])*/
 
 	function categoryIndexHandler(id: number): any {
 		setCategoryIndex(id)
@@ -32,30 +33,31 @@ const Blog = (): JSX.Element => {
 	return isLoading ? (
 		<Spinner />
 	) : (
-		<Container className='pt-5'>
-			<SectionHeader
-				description={
-					'Nulla luctus libero a risus auctor efficitur. Suspendisse nec nulla in leo lacinia sodales. Morbi auctor nulla euismod turpis faucibus, eget dignissim odio pharetra.'
-				}
-				subTitle={'Welcome to the blog.'}
-				title={'From the blog'}
-			>
-				<div>
-					{blog.map((item, index) => (
-						<button
-							key={index}
-							type='button'
-							className='btn btn-primary-kyomi mr-2'
-							onClick={() => categoryIndexHandler(index)}
-						>
-							A
-						</button>
-					))}
-				</div>
-			</SectionHeader>
+		<>
+			<Container style={{marginBottom: '170px', marginTop:'170px'}}>
+				<SectionHeader
+					description={
+						'Nulla luctus libero a risus auctor efficitur. Suspendisse nec nulla in leo lacinia sodales. Morbi auctor nulla euismod turpis faucibus, eget dignissim odio pharetra.'
+					}
+					subTitle={'Welcome to the blog.'}
+					title={'From the blog'}>
+					<div>
+						{/* todo: category */}
+						{category.map((item, index) => (
+							<button
+								key={item.id}
+								type='button'
+								className='btn btn-primary-kyomi mr-2'
+								onClick={() => categoryIndexHandler(index)}
+							>
+								{item.category}
+							</button>
+						))}
+					</div>
+				</SectionHeader>
 
-			<Row>
-				{blog &&
+				<Row>
+					{blog &&
 					blog.map((item, index) => (
 						<Col lg={3} key={index}>
 							<CardBlogPost
@@ -66,8 +68,11 @@ const Blog = (): JSX.Element => {
 							/>
 						</Col>
 					))}
-			</Row>
-		</Container>
+				</Row>
+			</Container>
+			<Highlight/>
+			<Footer/>
+		</>
 	)
 }
 

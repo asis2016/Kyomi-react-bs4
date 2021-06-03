@@ -1,11 +1,11 @@
 {
-"data":[
+	"vacancy": [
 		{
-      "title": "Human Resources Manager (m/w/d)",
-      "location": "Berlin",
-      "status": "Full-time",
-      "content": "<p>Requirements:</p><ul><li>20 years of experience.</li><li>You must know everything.</li></ul>"
-    },
+			"title": "Human Resources Manager (m/w/d)",
+			"location": "Berlin",
+			"status": "Full-time",
+			"content": "<p>Requirements:</p><ul><li>5 years of experience.</li><li>You must know everything.</li></ul>"
+		},
 		{
 			"title": "Service Technicians / Kfz-Mechatroniker (m/w/d)",
 			"location": "Kathmandu",
@@ -23,6 +23,6 @@
 			"location": "Kathmandu",
 			"status": "Full-time",
 			"content": "<p>Requirements:</p><ul><li>You must know software engineering.</li></ul>"
-    	}
+		}
 	]
 }

@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { GalleryBase } from './Gallery.style'
 import { HomeGallery, Spinner } from '../../../../components/atoms'
 import { SectionHeader } from '../../../../components/molecules'
+import {gallery} from './data.json'
 import axios from 'axios'
 
 /**
@@ -11,16 +12,17 @@ import axios from 'axios'
  * @returns A JSX.Element
  */
 const Gallery = (): JSX.Element => {
-	const [gallery, setGallery] = useState<GalleryProps[]>([])
-	const [isLoading, setIsLoading] = useState(true)
+	//const [gallery, setGallery] = useState<GalleryProps[]>([])
+	const [isLoading, setIsLoading] = useState(false)
 
+	/* todo: netlify
 	useEffect(() => {
 		axios.get('/json-server/kyomi/gallery.json').then((response) => {
 			setGallery(response.data)
 			setIsLoading(false)
 		})
 		return () => console.log('cleanup')
-	}, [])
+	}, [])*/
 
 	return (
 		<GalleryBase>
