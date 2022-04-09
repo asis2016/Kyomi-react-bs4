@@ -57,7 +57,7 @@ Contributions are always welcome! please contact us at dev@asm.com.np
 
 ## License
 
-[MIT (./LICENSE.txt)](./LICENSE.txt)
+[MIT (./LICENSE)](./LICENSE)
 
 ## Shout-out
  - [unsplash.com](https://unsplash.com/)
