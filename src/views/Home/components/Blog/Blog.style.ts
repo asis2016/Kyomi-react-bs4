@@ -13,4 +13,8 @@ export const BlogStyle = styled(Container)`
 	.price {
 		color: ${DefaultStyle.primary} !important;
 	}
+
+	.col-sm-12{
+		padding: 30px;
+	}
 `

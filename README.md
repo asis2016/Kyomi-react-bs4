@@ -1,5 +1,6 @@
 # Kyomi Mountaineering & Expedition
-Kyomi is a free React / TypeScript, Bootstrap 4 template made for Mountaineering expedition. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Kyomi is a free React / TypeScript, Bootstrap 4 template made for the Mountaineering expedition. This project was bootstrapped with Create React App. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Tech Stack
 React, TypeScript, HTML/CSS, SASS, styled-components, Bootstrap 4
@@ -38,16 +39,25 @@ Start the server
 ### Login
 [https://vibrant-wiles-0f8bc6.netlify.app/login](https://vibrant-wiles-0f8bc6.netlify.app/login)
 
-## Feedback
-If you have any feedback, please reach out to us at hello@amaharjan.com
-
-## Screenshot
+## Screenshots
 
 ### Homepage
 ![Screenshot](/screenshots/screenshot-v2.png)
 
 ### Login
 ![Screenshot](/screenshots/screenshot-login-v1.png)
+
+## Feedback
+
+If you have any feedback, please reach out to us at dev@asm.com.np
+
+## Contributing
+
+Contributions are always welcome! please contact us at dev@asm.com.np
+
+## License
+
+[MIT (./LICENSE.txt)](./LICENSE.txt)
 
 ## Shout-out
  - [unsplash.com](https://unsplash.com/)

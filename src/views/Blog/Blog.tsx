@@ -59,7 +59,7 @@ const Blog = (): JSX.Element => {
 				<Row>
 					{blog &&
 					blog.map((item, index) => (
-						<Col lg={3} key={index}>
+						<Col className="col-lg-3 col-sm-12" key={index}>
 							<CardBlogPost
 								author={item.author}
 								excerpt={item.excerpt}

@@ -25,7 +25,7 @@ export const Portfolio = () => {
 							backgroundImage:
 								'url(https://raw.githubusercontent.com/asis2016/kyomi-react-bootstrap4/master/src/assets/images/p-1.jpg)',
 						}}
-						className='col-one'></Col>
+						className='col-one col-sm-12 col-sm-12'></Col>
 
 					<Col className='d-flex justify-content-center align-items-center'>
 						<Carousel>

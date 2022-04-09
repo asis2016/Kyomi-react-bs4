@@ -10,7 +10,7 @@ const CardFeature = ({
 	image,
 }: CardFeatureProps): JSX.Element => {
 	return (
-		<CardFeatureStyle className={id % 2 != 1 ? 'col-7' : 'col-5'}>
+		<CardFeatureStyle className={id % 2 != 1 ? 'col-lg-7 col-md-6 col-sm-12 col-xs-12' : 'col-lg-5 col-md-6 col-sm-12 col-xs-12'}>
 			<Card className='mb-3'>
 				<div
 					className='card-body my-auto'

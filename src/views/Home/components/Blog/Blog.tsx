@@ -36,7 +36,7 @@ const Blog = () => {
 				{isLoading ? (
 					<Spinner />
 				) : (blogData.map((item, index) => (
-						<Col xs={3} key={index}>
+						<Col lg={3} md={6} sm={12} xs={12} key={index}>
 							<CardBlogPost
 								title={item.title}
 								image={item.image}
